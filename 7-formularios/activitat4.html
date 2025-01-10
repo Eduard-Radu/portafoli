@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 4 - Formularis</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Busca la teva camara</legend>
+
+            <label for="marca">Marca</label>
+            <select name="marca" required>
+                <option value="Canon">Canon</option>
+                <option value="Sony">Sony</option>
+                <option value="nikon">Nikon</option>
+                <option value="pentax">Pentax</option>
+                <option value="sinar">Sinar</option>
+            </select><br><br>
+
+            <label for="resolucion">Resolució</label>
+            <select name="resolucion" required>
+                <option value="4k">4k</option>
+                <option value="8k">8k</option>
+                <option value="ULTRA HD">ULTRA HD</option>
+                <option value="8k ULTRA HD">8k ULTRA HD</option>
+            </select><br><br>
+
+            <label for="tipo">Tipus</label>
+            <select name="tipo" required>
+                <option value="APS">APS</option>
+                <option value="reflex SLR">Reflex SLR</option>
+                <option value="digital">Digital</option>
+                <option value="mirrorless">Mirrorless</option>
+            </select><br><br>
+
+            <label for="precio-minimo">Preu Mínim (de 0 a 1000)</label><br>
+            <input type="range" id="precio-minimo" name="precio-min" min="0" max="1000"><br><br>
+    
+            <label for="precio-maximo">Preu Màxim (de 10 a 1000)</label><br>
+            <input type="range" id="precio-maximo" name="precio-max" min="10" max="1000"><br><br>
+    
+
+            <button type="submit">Buscar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
