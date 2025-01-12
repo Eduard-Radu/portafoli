@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - BEM</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header > .nav > .nav__list {
+        display: flex;
+        list-style-type: none;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .header > .nav > .nav__list > .nav__item > .nav__enlace {
+        margin-right: 1rem;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: font-size .5s ease-in-out;
+    }
+
+    .header > .nav > .nav__list > .nav__item > .nav__enlace:hover {
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+
+    .section > .section__form > .form__input {
+        padding: .6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    .section > .section__form > .form__button {
+        padding: .3rem;
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid rgb(101, 101, 101);
+        border-radius: .5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .section > .section__form > .form__button:hover {
+        background-color: rgb(101, 101, 101);
+        color: white;
+    }
+</style>
+<body>
+    <header class="header">
+        <img src="images/logo_caparrella.jpg" alt="Logo pagina web" class="header__image">
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__enlace">Inici</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__enlace">Login</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__enlace">Registre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <form class="section__form">
+            <label for="nom" class="form__label">Buscador</label>
+            <input type="search" name="buscador" class="form__input" placeholder="Busca algo"/>
+
+            <button class="form__button">Busca</button>
+        </form>
+    </section>
+</body>
+</html>
