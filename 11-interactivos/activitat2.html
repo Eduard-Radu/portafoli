@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - Interactius</title>
+</head>
+<body>
+    <h1>Busca la marca del teu movil</h1>
+
+    <form>
+        <label>Busca la marca
+            <input list="marca" type="text" name="marca">
+        </label>
+        
+        <datalist id="marca">
+            <option value="Samsung"></option>
+            <option value="Apple"></option>
+            <option value="Xiaomi"></option>
+            <option value="Nothing"></option>
+            <option value="Oppo"></option>
+        </datalist> <br><br>
+
+        <label for="precio">Rang del preu:</label>
+        <select name="precio">
+            <option value="0-200">0€ - 200€</option>
+            <option value="200-500">200€ - 500€</option>
+            <option value="500-1000">500€ - 1000€</option>
+            <option value="1000-2000">1000€ - 2000€</option>
+        </select> <br><br>
+    
+        <button>Buscar</button>
+    </form>
+</body>
+</html>
