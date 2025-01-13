@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - Padding</title>
+</head>
+<style>
+    :root {
+        --light-yellow-color: #FCEECA;
+        --blue-cyan-color: #007C89;
+        --ocean-blue-color: #C5DCF2;
+    }
+
+    body {
+        background-color: var(--light-yellow-color);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-inline: 2rem;
+    }
+
+    .main > .left__side {
+        max-width: 40%;
+    }
+
+    .main > .left__side > .main__title {
+        font-size: 2.5rem;
+        max-width: 360px;
+    }
+
+    .main > .left__side > .main__text {
+        font-size: 1.2rem;
+        max-width: 360px;
+        margin-bottom: 2rem;
+    }
+
+    .main > .left__side > .main__buttons > .main__button:first-child {
+        background-color: var(--blue-cyan-color);
+        border: 2px solid var(--blue-cyan-color);
+        padding: 1rem;
+        padding-inline: 1.6rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: .5rem
+    }
+
+    .main > .left__side > .main__buttons > .main__button:nth-child(2){
+        background: none;
+        font-weight: bold;
+        border: none;
+        padding: 1rem;
+        color: var(--blue-cyan-color);
+        cursor: pointer;
+    }
+
+    .main > .right__side > .main__image {
+        width: 200px;
+        margin-left: 4rem;
+    }
+    
+    .footer {
+        background-color: var(--ocean-blue-color);
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        margin-top: 4rem;
+    }
+
+    .footer > .footer__text {
+        margin-inline: 6rem;
+    }
+
+</style>
+<body>
+    <main class="main">
+        <div class="left__side">
+            <h1 class="main__title">
+                Ponte manos a la obra y aumenta las ventas
+            </h1>
+            <p class="main__text">Consigue que tus clientes interactuen y haz crecer tu negocio con la plataforma de marketing avanzada pero facil de usar de Mailchimp</p>
+    
+            <div class="main__buttons">
+                <button class="main__button">Subscribete</button>
+                <button class="main__button">Comprar planes</button>
+            </div>
+        </div>
+        <div class="right__side">
+            <img src="images/illustration.jpg" class="main__image" alt="illustration">
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Mailchimp ha sido adquirida por Intuit. Nuestro cofundador y CEO compartió la noticia con nuestros clientes. Léela <a href="#">aqui</a> en inglés</p>
+    </footer>
+
+</body>
+</html>
