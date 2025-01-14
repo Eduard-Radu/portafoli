@@ -1,0 +1,84 @@
+:root {
+    --dark-blue-color: #003049;
+    --red-color: #D62828;
+    --orange-color: #F77F00;
+    --light-orange-color: #FCBF49;
+    --beige-color: #EAE2B7;
+}
+
+body {
+    background-color: var(--orange-color);
+    color: var(--beige-color);
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    margin: 0;
+}
+
+.header > .header__nav {
+    position: absolute;
+    left: 82%;
+    top: 2%;
+    width: 25vh;
+    background-color: var(--dark-blue-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.header > .header__nav > .nav__list {
+    list-style-type: none;
+}
+
+.header > .header__nav > .nav__list > .list__item {
+    margin-bottom: 1rem;
+}
+
+.header > .header__nav > .nav__list > .list__item > .item__link {
+    color: var(--beige-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.text--underline {
+    width: 0px;
+    height: 1px;
+    background-color: var(--beige-color);
+    transition: width .5s ease-in-out;
+}
+
+.header > .header__nav > .nav__list > .list__item:hover > .text--underline {
+    width: 70px;
+}
+
+
+.header > .header__title {
+    margin: -2rem;
+    font-size: 30vh;
+    margin-left: 1rem;
+}
+
+.header > .header__title > .cognom1 {
+    margin-left: 30%;
+}
+
+.header > .header__title > .cognom2 {
+    margin-left: 55%;
+}
+
+.header > .header__description {
+    position: absolute;
+    top: 20%;
+    margin-left: 1.5rem;
+    font-size: 4rem;
+    max-width: 300px;
+    color: var(--dark-blue-color);
+}
+
+.header > .header__image {
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    width: 50vh;
+}
