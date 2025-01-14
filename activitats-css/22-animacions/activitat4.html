@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 4 - Animacions</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .reloj {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 20px solid black;
+            border-radius: 50%;
+        }
+
+        .centro {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+            top: 46.5%;
+            left: 46.5%;
+            z-index: 10;
+        }
+
+        .aguja {
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: black;
+            top: 50%;
+            left: 0%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+        }
+
+        .hora {
+            left: 15%;
+            width: 35%;
+            height: 6px;
+            background: black;
+            animation: rotar-aguja-hora 43200s infinite linear;
+        }
+
+        .minuto {
+            height: 4px;
+            animation: rotar-aguja-minuto 3600s infinite linear;
+        }
+
+        .segundo {
+            height: 2px;
+            background: red;
+            animation: rotar-aguja-segundo 60s infinite linear;
+        }
+
+        @keyframes rotar-aguja-hora {
+            from {
+                transform-origin: 100%;
+                transform: rotate(90deg);
+            }
+
+            to {
+                transform-origin: 100%;
+                transform: rotate(450deg);
+            }
+        }
+
+        @keyframes rotar-aguja-minuto {
+            from {
+                transform-origin: 100%;
+                transform: rotate(90deg);
+            }
+
+            to {
+                transform-origin: 100%;
+                transform: rotate(450deg);
+            }
+        }
+
+        @keyframes rotar-aguja-segundo {
+            from {
+                transform-origin: 100%;
+                transform: rotate(90deg);
+            }
+
+            to {
+                transform-origin: 100%;
+                transform: rotate(450deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reloj">
+        <div class="centro"></div>
+        <div class="aguja hora"></div>
+        <div class="aguja minuto"></div>
+        <div class="aguja segundo"></div>
+    </div>
+    
+</body>
+</html>

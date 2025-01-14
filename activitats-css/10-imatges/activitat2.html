@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - Imatges</title>
+</head>
+<style>
+    .section {
+        display: flex;
+    }
+
+    .section > .section__image {
+        height: 100vh;
+        width: 100vh;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10%;
+    }
+
+    .section > .section__div {
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    .section > .section__div > .div__ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .section > .section__div > .div__ul > li > a > .div__img {
+        width: 40px;
+        margin-right: 1rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: scale .5s ease-in-out;
+    }
+
+    .section > .section__div > .div__ul > li > a > .div__img:hover {
+        scale: 1.2;
+    }
+</style>
+<body>
+    <section class="section">
+        <img src="images/foto_curriculum.jpg" alt="Foto meva" class="section__image">
+
+        <div class="section__div">
+            <h1>Eduard Stefan Radu</h1>
+            <h2>Programador Full-Stack</h2>
+
+            <ul class="div__ul">
+                <li><a href="#"><img src="images/instagram_icon.png" alt="Instagram Logo" class="div__img"></a></li>
+                <li><a href="#"><img src="images/twitter_icon.png" alt="Twitter Logo" class="div__img"></a></li>
+                <li><a href="#"><img src="images/youtube_icon.png" alt="Youtube Logo" class="div__img"></a></li>
+                <li><a href="#"><img src="images/email_icon.png" alt="Email Logo" class="div__img"></a></li>
+                <li><a href="#"><img src="images/website_icon.png" alt="Website Logo" class="div__img"></a></li>
+            </ul>
+        </div>
+
+    </section>
+</body>
+</html>

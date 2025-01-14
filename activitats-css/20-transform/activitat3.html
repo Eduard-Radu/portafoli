@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Transform</title>
+</head>
+<style>
+    body {
+        display: flex;
+    }
+
+    .circle1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .circle2 {
+        margin-left: 2rem;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 0, 255, 0.5);
+        z-index: 2;
+    }
+
+    .circle1:hover {
+        transform: translateX(8.25rem);
+    }
+</style>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+</html>

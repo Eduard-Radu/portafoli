@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - Marges</title>
+</head>
+<style>
+    :root {
+        --light-blue-color: rgba(182, 204, 182, 0.5);
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header > .header__text{
+        max-width: 450px;
+        text-align: center;
+        background-color: var(--light-blue-color);
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .header > .header__text > .underline--text {
+        text-decoration: underline;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 9rem;
+    }
+
+    .section > * {
+        width: 300px;
+
+    }
+
+    .section > .section__title {
+        font-size: 2.8rem;
+    }
+
+    .section > .section__text {
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+
+    .section > .section__button {
+        margin-top: 2rem;
+        padding: .7rem;
+        width: 150px;
+        background: none;
+        border: 1px solid black;
+        border-radius: 1rem;
+        margin-right: 9rem;
+    }
+</style>
+<body>
+    <header class="header">
+        <p class="header__text">We're so glad that our offer of UXDMC for free was so well recieved. So many people joined up over the past 2 months and it's been great to grow the community. <span class="underline--text">The free offer will be ending at the end of the month April and the CARE code will continue to be good for 80% off any or all modules</span></p>
+    </header>
+
+    <section class="section">
+        <h1 class="section__title">
+            ux design masterclass
+        </h1>
+
+        <p class="section__text">Learn how to understand people better, design stunning, research driven interfaces, and create real business value from a team that's been doing it for more than 16 years. This isn't just another design course.</p>
+
+        <button class="section__button">Register Now</button>
+    </section>
+</body>
+</html>

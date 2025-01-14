@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Activitat 2 - Accesibilitat</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Regristra't</legend>
+
+            <label for="nombre_usuario"><span aria-hidden="true">👤</span>Nom usuari</label><br>
+            <input type="text" name="nombre_usuario" required placeholder="Nom usuari..."><br><br>
+
+            <label for="correo"><span aria-hidden="true">📧</span>Correu</label><br>
+            <input type="email" name="correo" required placeholder="Correu..."><br><br>
+
+            <label for="repetir_correo"><span aria-hidden="true">📧</span>Repeteix el correu</label><br>
+            <input type="email" name="repeetir_correo" required placeholder="Correu..."><br><br>
+
+            <label for="contrasenya"><span aria-hidden="true">🔒</span>Contrasenya</label><br>
+            <input type="password" name="contrasenya" required placeholder="Contrasenya..."><br><br>
+            
+            <label for="repetir_contrasenya"><span aria-hidden="true">🔒</span>Repeteix la contrasenya</label><br>
+            <input type="password" name="repetir_contrasenya" required placeholder="Contrasenya..."><br><br>
+
+            <span
+            role="checkbox"
+            aria-checked="false"
+            tabindex="0"
+            aria-labelledby="condicions"></span>
+            <label id="condicions">Accepto les condicioes</label>
+            <input type="checkbox" name="condicions"> <br><br>
+            
+            <button type="submit" aria-label="Registrar">Registrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

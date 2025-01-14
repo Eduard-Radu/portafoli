@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Colors</title>
+</head>
+<style>
+    :root {
+        --light-gray-color: rgb(188, 188, 188);
+        --gray-color: gray;
+        --red-color: rgb(234, 0, 0);
+
+    }
+
+    .header > .header__title {
+        border-top: solid 4px var(--light-gray-color);
+        color: var(--red-color);
+        padding: 1rem;
+        border-bottom: solid 1px var(--light-gray-color);
+    }
+
+    .header > .header__title > .slim--text {
+        font-weight: 100;
+    }
+
+    .section > .section__text {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--gray-color);
+        line-height: 2rem;
+    }
+
+    .section > .section__text > .redbg--text {
+        background-color: var(--red-color);
+        padding: .3rem;
+        color: white;
+    }
+
+    .section > .section__text > .text__link {
+        text-decoration: none;
+        color: var(--red-color);
+    }
+
+    .languages_section {
+        background-color: rgb(244, 244, 244);
+        padding: 1rem;
+        margin: auto;
+        margin-top: 2rem;
+        max-width: 80%;
+    }
+
+    .languages_section > .section__title {
+        color: gray;
+        font-weight: 100;
+    }
+
+    .languages_section > .section__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        border-bottom: 1px solid var(--light-gray-color);
+    }
+
+    .languages_section > .section__article:last-child {
+        border-bottom: none;
+    }
+    
+    .languages_section > .section__article > .article__text {
+        line-height: 1.5rem;
+        color: var(--gray-color);
+    }
+
+    .languages_section > .section__article > .article__text > .time--text {
+        font-style: italic;
+        color: var(--light-gray-color);
+    }
+
+    .languages_section > .section__article > .article__text > .text__link {
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    .footer > .footer__text {
+        text-align: center;
+        font-size: .9rem;
+        margin-top: 2rem;
+        line-height: 1.5rem;
+    }
+
+    .redund--text {
+        color: var(--red-color);
+        font-weight: bold;
+        border-bottom: 1px solid var(--light-gray-color);
+        padding: .2rem;
+    }
+</style>
+<body>
+    <header class="header">
+        <h1 class="header__title"><span class="slim--text">Eduard</span>BLOG</h1>
+    </header>
+
+    <section class="section">
+        <p class="section__text">Bones, el meu nom es <span class="redbg--text">Eduard Stefan Radu</span> i soc programador Full-Stack,
+            sempre intentant a aprendre més coses. -- <a class="text__link" href="#"> Sobre mi</a></p>
+    </section>
+
+    <section class="languages_section">
+        <h2 class="section__title">Llenguatges que conec:</h2>
+
+        <article class="section__article">
+            <p class="article__text"><span class="time--text">2020 - 2025</span> -- <span class="redund--text">Python</span> --
+            Python és el Llenguatge que més domino en l'actualitat ja que és el que més m'agrada i el que més he estudiat,
+            a part dels seus Frameworks com Django i Tkinter... <a class="text__link redund--text" href="#">Més</a></p>
+        </article>
+
+        <article class="section__article">
+            <p class="article__text"><span class="time--text">2022 - 2025</span> -- <span class="redund--text">JavaScript</span> --
+            JavaScript és el segon llenguatge que més domino i més m'agrade ja que té molta flexibilitat i escalat per fer
+            tot tipus de projectes com págines web i applicacions mobils... <a class="text__link redund--text" href="#">Més</a></p>
+        </article>
+
+        <article class="section__article">
+            <p class="article__text"><span class="time--text">2024 - 2025</span> -- <span class="redund--text">Java</span> --
+            Java era un llenguatge que no m'atraia l'atenció, he intentat aprendre'l pero no m'ha acabat de convençer,
+            encara que ara a l'institut l'estic utilitzant i m'he donat compte que m'agrade molt... <a class="text__link redund--text" href="#">Més</a></p>
+        </article>
+
+        <article class="section__article">
+            <p class="article__text"><span class="time--text">2022 - 2023</span> -- <span class="redund--text">Kotlin</span> --
+            Kotlin no m'agrada molt pero l'he apres per a poder fer applicacions mobils and Android Studio Code, es un Java
+            pero més senzill... <a class="text__link redund--text" href="#">Més</a></p>
+        </article>
+
+        <article class="section__article">
+            <p class="article__text"><span class="time--text">2020 - 2025</span> -- <span class="redund--text">HTML i CSS</span> --
+            Encara que no siguin llenguatges com a tal, els domino casi a la perfecció gracies a tots els anys que he estat aprenent
+            mirant tutorials de YouTube, com tots menos Java basicament i gràcies a aixó he pogut fer pàgines web per a altres persones i
+            guanyar algo programant. <a class="text__link redund--text" href="#">Més</a></p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Copyright&copy; 2025 <span class="redund--text">Eduard Stefan</span> Radu.</p>
+    </footer>
+</body>
+</html>

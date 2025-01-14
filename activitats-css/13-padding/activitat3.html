@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Padding</title>
+</head>
+<style>
+    .section {
+        font-family: Arial, Helvetica, sans-serif;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .section > .section__answer {
+        max-width: 500px;
+    }
+
+    .open {
+        height: 100%;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .section:last-of-type {
+        border-bottom: solid 1px black;
+    }
+</style>
+<body>
+    <section class="section">
+        <h1 class="section__question">¿Que metodos de pago se ofrecen?</h1>
+        <p class="section__answer close">Se ofrecen metodos de pago como PayPal, targeta de credito, Paysafecard, etc.</p>
+    </section>
+
+    <section class="section">
+        <h1 class="section__question">¿Como puedo cambiarme a un plan diferente?</h1>
+        <p class="section__answer open">Puedes cambiarte a un nuevo plan en cualquier momento; para ello, entra en la página de Facturación de tu cuenta. Selecciona el plan al que deseas cambiarte y podrás empezar a usar las nuevas funciones de inmediato.</p>
+    </section>
+
+    <section class="section">
+        <h1 class="section__question">Puedo optar por comprar créditos?</h1>
+        <p class="section__answer close">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad aliquid impedit eos ab, error doloribus amet, excepturi corporis sed aperiam quia quis nemo eius, pariatur est modi incidunt obcaecati!</p>
+    </section>
+
+    <section class="section">
+        <h1 class="section__question">¿Hay precios especiales para quienes envían grandes volumenes de correos electrónicos?</h1>
+        <p class="section__answer close">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus saepe doloremque blanditiis consectetur voluptatum illum dolores nisi vel quaerat quidem quasi, aperiam delectus et consequuntur, quibusdam quo? Laudantium, eligendi eveniet.</p>
+    </section>
+
+    <section class="section">
+        <h1 class="section__question">¿Que sucede si llego al límite de envíos o contacos?</h1>
+        <p class="section__answer close">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt quisquam voluptatem dolorem labore. Laboriosam exercitationem aperiam pariatur quisquam eligendi possimus commodi fuga veritatis quam nihil natus nobis, ex cupiditate!</p>
+    </section>
+</body>
+</html>

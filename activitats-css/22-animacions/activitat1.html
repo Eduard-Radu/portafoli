@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - Animacions</title>
+</head>
+<style>
+    .sun {
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 225, 0);
+        border-radius: 50%;
+    }
+
+    .moon {
+        position: absolute;
+        top: 35%;
+        left: -20%;
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        border-radius: 50%;
+        animation: moon-loop-animation 10s forwards infinite;
+    }
+
+    @keyframes moon-loop-animation {
+        0% {
+            left: -20%;
+        }
+
+        40% {
+            left: 45%;
+        }
+
+        60% {
+            left: 45%;
+        }
+
+        100% {
+            left: 100%
+        }
+    }
+</style>
+<body>
+    <div class="sun"></div>
+    <div class="moon"></div>
+</body>
+</html>

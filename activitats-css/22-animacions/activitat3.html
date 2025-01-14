@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Animacions</title>
+</head>
+
+<style>
+    .div {
+        opacity: 0;
+        background-color: orange;
+        width: 400px;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 2px;
+        animation: animacio-apareixer 5s ease 4s 1 forwards normal;
+    }
+
+    .div > .div__button {
+        background-color: white;
+        border: none;
+        padding: .5rem;
+        padding-inline: 2rem;
+        border-radius: 2px;
+        margin-inline: 1rem;
+        cursor: pointer;
+    }
+
+    @keyframes animacio-apareixer {
+        from {
+            opacity: 0%;
+        }
+
+        to {
+            opacity: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="div">
+        <h1 class="div__title">Accetes les nostres Cookies?</h1>
+        <p>Utilitzem cookies per millorar la teva experiencia en la nostra web!</p>
+        <button class="div__button">Si</button>
+        <button class="div__button">No</button>
+    </div>
+</body>
+</html>

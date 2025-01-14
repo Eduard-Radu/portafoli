@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - Imatges</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section > .section__article {
+        background-color: rgb(212, 212, 212);
+        padding: 1rem;
+        width: 300px;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+    }
+
+    .section > .section__article > .article__div {
+        display: flex;
+        align-items: center;
+    }
+
+    .section > .section__article > .article__div > * {
+        margin-right: 1rem;
+    }
+
+    .section > .section__article > .article__div > .div__name {
+        font-size: 1.2rem;
+    }
+
+    .section > .section__article > .article__div > .div__time {
+        font-size: 0.8rem;
+        color: rgb(157, 157, 157);
+        margin-top: 1rem;
+    }
+
+    .section > .section__article > .article__div > .div__image {
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .section > .section__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section > .section__form > .form__input {
+        padding: 0.5rem;
+        width: 180px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+
+    .section > .section__form > .form__button {
+        border: none;
+        background: none;
+    }
+
+    .section > .section__form > .form__button > .button__image {
+        width: 40px;
+        cursor: pointer;
+        transition: scale .5s ease-in-out;
+    }
+
+    .section > .section__form > .form__button > .button__image:hover {
+        scale: 1.2;
+    }
+</style>
+<body>
+    <header>
+        <h1>Chat</h1>
+    </header>
+
+    <section class="section">
+        <article class="section__article">
+            <div class="article__div">
+                <img src="images/user_icon.png" alt="Avatar" class="div__image">
+                <h2 class="div__name">Usuari 1</h2>
+                <p class="div__time">12-01-2025</p>
+            </div>
+            <p>Bones, com estas?</p>
+        </article>
+
+        <article class="section__article">
+            <div class="article__div">
+                <img src="images/user_icon2.jpeg" alt="Avatar" class="div__image">
+                <h2 class="div__name">Usuari 2</h2>
+                <p class="div__time">12-01-2025</p>
+            </div>
+            <p>Bé, fent CSS i tu?</p>
+        </article>
+
+        <article class="section__article">
+            <div class="article__div">
+                <img src="images/user_icon.png" alt="Avatar" class="div__image">
+                <h2 class="div__name">Usuari 1</h2>
+                <p class="div__time">13-01-2025</p>
+            </div>
+            <p>Igualment, fent aquesta pagina</p>
+        </article>
+
+        <form class="section__form">
+            <label for="message" class="form__label">Missatge</label>
+            <input type="text" name="message" class="form__input">
+
+            <button class="form__button"><img src="images/send_icon.png" alt="Send Icon" class="button__image"></button>
+        </form>
+    </section>
+</body>
+</html>

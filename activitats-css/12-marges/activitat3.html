@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Marges</title>
+</head>
+<style>
+    :root {
+        --red-color: #FF5645;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/bg_photo.jpg);
+        aspect-ratio: 16 / 6;
+        background-size: cover;
+        object-position: center;
+        text-align: center;
+    }
+
+    .header > * {
+        max-width: 700px;
+        color: white;
+        margin-inline-start: 1rem;
+    }
+
+    .header > .header__text {
+        text-shadow: 2px 2px black;
+    }
+
+    .header > .separator {
+        width: 35px;
+        height: 2px;
+        background-color: var(--red-color);
+    }
+
+    .header > .header__button {
+        margin-bottom: 4rem;
+        background-color: var(--red-color);
+        padding: .6rem;
+        padding-inline: 1.11rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        border: solid 2px var(--red-color);
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+        margin-top: 2rem;
+    }
+
+    .header > .header__button:hover {
+        background-color: rgba(255, 122, 111, 0.0);
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--red-color);
+        padding: 4rem;
+        color: white;
+        height: 50vh;
+    }
+
+    .section > .section__text {
+        max-width: 580px;
+        text-align: center;
+    }
+
+    .section > .separator {
+        width: 35px;
+        height: 2px;
+        background-color: white;
+    }
+
+    .section > .section__button {
+        background-color: white;
+        border: solid 2px white;
+        padding: .6rem;
+        padding-inline: 1.11rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+        margin-top: .5rem;
+    }
+
+    .section > .section__button:hover {
+        background-color: rgba(255, 122, 111, 0.0);
+    }
+</style>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            YOUR FAVOURITE SOURCE OF FREE BOOTSTRAP THEMES
+        </h1>
+        <span class="separator"></span>
+
+        <p class="header__text">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+
+        <button class="header__button">FIND OUT MORE</button>
+    </header>
+
+    <section class="section">
+        <h2 class="section__title">We've got what you need!</h2>
+        <span class="separator"></span>
+
+        <p class="section__text">Start Bootstrap has everything to get your new website up and running in no time! All of the templates and trhemes on Start Bootstrap are open source,free to download, and easy to use. No strings attached!</p>
+
+        <button class="section__button">GET STARTED!</button>
+    </section>
+</body>
+</html>

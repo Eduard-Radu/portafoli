@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 3 - Display</title>
+</head>
+<style>
+    .header > .header__nav > .nav__ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .header > .header__nav > .nav__ul > .ul__item > .li__link {
+        margin-right: 1.5rem;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        transition: all .2s ease-in-out;
+    }
+
+    .header > .header__nav > .nav__ul > .ul__item > .li__link:hover {
+        padding-bottom: .2rem;
+        font-size: 1.05rem;
+    }
+</style>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li class="ul__item"><a href="#" class="li__link">Casa</a></li>
+                <li class="ul__item"><a href="#" class="li__link">Blog</a></li>
+                <li class="ul__item"><a href="#" class="li__link">Contacte</a></li>
+                <li class="ul__item"><a href="#" class="li__link">Preu</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
