@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - Transicions</title>
+</head>
+<style>
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .form > .form__input {
+        margin-top: .5rem;
+        margin-bottom: 20px;
+        border: solid 2px black;
+        padding: .5rem;
+        transition: all .5s ease-in-out;
+    }
+
+    .form > .form__input:hover {
+        border: solid 0px black;
+        font-size: 1.2rem;
+    }
+
+    .form > .form__button {
+        margin-top: 5px;
+        padding-block: .5rem;
+        border: 0px solid orange;
+        background-color: orange;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .form > .form__button:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        border: 2px solid orange;
+    }
+</style>
+<body>
+    <form class="form">
+        <label for="nombre">Nom:</label>
+        <input type="text" name="nombre" class="form__input" placeholder="Nom">
+
+        <label for="nombre">Telefon:</label>
+        <input type="number" name="telefono" class="form__input" placeholder="Telefon">
+
+        <button class="form__button">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - Animacions</title>
+</head>
+<style>
+    .noria {
+        position: absolute;
+        left: 10%;
+        top: 5%;
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        border-radius: 50%;
+        animation: rotate 20s forwards infinite;
+    }
+
+    .soporte1 {
+        position: absolute;
+        left: 14%;
+        top: 15.5%;
+        transform: rotate(20deg);
+        width: 10px;
+        height: 160px;
+        background-color: black;
+    }
+
+    .soporte2 {
+        position: absolute;
+        left: 18.5%;
+        top: 15.5%;
+        transform: rotate(-20deg);
+        width: 10px;
+        height: 160px;
+        background-color: black;
+    }
+
+    .base {
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        width: 200px;
+        height: 20px;
+        background-color: black;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="noria">d</div>
+    <div class="soporte1"></div>
+    <div class="soporte2"></div>
+    <div class="base"></div>
+</body>
+</html>
