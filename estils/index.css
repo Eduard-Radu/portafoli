@@ -26,7 +26,7 @@ body {
 
 .header > .header__nav {
     position: absolute;
-    left: 82%;
+    left: 80%;
     top: 2%;
     width: 25vh;
     background-color: var(--dark-blue-color);
@@ -36,6 +36,7 @@ body {
 
 .header > .header__nav > .nav__list {
     list-style-type: none;
+    margin-left: -1.5rem;
 }
 
 .header > .header__nav > .nav__list > .list__item {
@@ -64,7 +65,6 @@ body {
     margin: -.5rem;
     font-size: 25vh;
     margin-left: 1rem;
-    margin-top: 2rem;
 }
 
 .header > .header__title > .cognom1 {
