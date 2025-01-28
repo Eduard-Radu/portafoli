@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estils/contacto.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <p class="nav__icon">&lt;/&gt;</p>
+            <ul class="nav__list">
+                <li class="list__item">
+                    <a href="/" class="item__link">Incio</a>
+                    <div class="bg-hover"></div>
+                </li>
+                <li class="list__item">
+                    <a href="/activitats-css/" class="item__link">Actividades</a>
+                    <div class="bg-hover"></div>
+                </li>
+                <li class="list__item">
+                    <a href="projectes.html" class="item__link">Proyectos</a>
+                    <div class="bg-hover"></div>
+                </li>
+                <li class="list__item">
+                    <a href="" class="item__link">Curriculum</a>
+                    <div class="bg-hover"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <form class="section__form" action="mailto:eradu@inscaparrella.cat" method="post" enctype="text/plain">
+            <p class="form__caption">Contactame:</p>
+
+            <label for="email" class="form__label">Email:</label>
+            <input type="email" placeholder="Email" name="email" id="email" class="form__input" required>
+
+            <label for="fullname" class="form__label">Nombre Completo:</label>
+            <input type="text" placeholder="Nombre completo..." name="fullname" id="fullname" class="form__input" required>
+
+            <label for="text" class="form__label">Texto:</label>
+            <textarea name="text" id="text" placeholder="Texto..." class="form__textarea" required></textarea>
+
+            <button type="submit" class="form__button">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
