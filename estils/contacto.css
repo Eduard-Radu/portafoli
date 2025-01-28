@@ -1,0 +1,146 @@
+:root {
+    --dark-blue-color: #003049;
+    --red-color: #D62828;
+    --orange-color: #F77F00;
+    --light-orange-color: #FCBF49;
+    --beige-color: #EAE2B7;
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url(../fonts/ArchivoBlack-Regular.ttf);
+    font-display: swap;
+}
+
+body {
+    background-color: var(--orange-color);
+    color: var(--beige-color);
+    font-family: 'ArchivoBlack';
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.header > .header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > .header__nav > .nav__icon {
+    margin-left: 1rem;
+}
+
+.header > .header__nav > .nav__list {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.header > .header__nav > .nav__list > .list__item > .item__link {
+    position: relative;
+    text-decoration: none;
+    color: var(--dark-blue-color);
+    z-index: 2;
+    transition: color .5s ease-in-out;
+}
+
+.header > .header__nav > .nav__list > .list__item > .bg-hover {
+    transform: translateY(-1.4rem);
+    width: 0px;
+    height: 0px;
+    background-color: var(--dark-blue-color);
+    margin-bottom: -2rem;
+    transition: width .5s ease-in-out;
+}
+
+.header > .header__nav > .nav__list > .list__item:hover > .bg-hover {
+    width: 100%;
+    height: 100%;
+    padding-bottom: .4rem;
+}
+
+.header > .header__nav > .nav__list > .list__item:hover > .item__link {
+    color: var(--beige-color);
+}
+
+.title {
+    margin-left: 1rem;
+}
+
+.section > .section__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.section > .section__form > .form__caption {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.section > .section__form > .form__label {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.section > .section__form > .form__input {
+    padding: .5rem;
+    border: none;
+    border-bottom: solid 1px var(--dark-blue-color);
+    background-color: rgb(255, 255, 255, 0);
+    transition: all .5s ease-in-out;
+    color: var(--dark-blue-color);
+}
+
+.section > .section__form > .form__input:focus {
+    background-color: var(--dark-blue-color);
+    color: var(--beige-color);
+}
+
+.section > .section__form > .form__textarea {
+    padding: .5rem;
+    border: none;
+    border-bottom: solid 1px var(--dark-blue-color);
+    background-color: rgb(255, 255, 255, 0);
+    transition: all .5s ease-in-out;
+    resize: none;
+    height: 150px;
+    font-size: 1rem;
+    color: var(--dark-blue-color);
+}
+
+.section > .section__form > .form__textarea:focus {
+    background-color: var(--dark-blue-color);
+    color: var(--beige-color);
+}
+
+.section > .section__form > .form__button {
+    padding-block: .7rem;
+    width: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0);
+    border: solid 3px var(--red-color);
+    border-radius: .4rem;
+    color: var(--beige-color);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color .5s ease-in-out;
+}
+
+.section > .section__form > .form__button:hover {
+    background-color: var(--red-color);
+}
