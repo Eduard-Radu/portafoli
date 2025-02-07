@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer > .footer__list {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.footer > .footer__list > .list__item > .item__link {
+    color: var(--beige-color);
+    text-decoration: none;
+}
+
+.footer > .footer__list > .list__item > .item__link:hover {
+    text-decoration: underline;
+}
