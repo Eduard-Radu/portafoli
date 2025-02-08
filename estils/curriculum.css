@@ -13,96 +13,219 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--orange-color);
     color: var(--beige-color);
     font-family: 'ArchivoBlack';
     margin: 0;
+    overflow-x: hidden;
 }
 
 .title {
     margin-left: 1rem;
 }
 
-.section {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+@media screen and (min-width: 1400px) {
+    .section {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .section > .content > .about > .about__text {
+        text-align: justify;
+        max-width: 125vh;
+        margin-right: 2rem;
+    }
+    
+    .section > .content > .about > .about__text > .underlined--text {
+        text-decoration: underline;
+    }
+    
+    .section > .section__separator {
+        width: 2px;
+        height: 85vh;
+        background-color: white;
+    }
+    
+    .section > .card > .card__photo {
+        width: 200px;
+        margin-left: 2.5rem;
+        box-shadow: 7px 7px;
+    }
+    
+    .section > .card > .card__info > .info__list > .list__item {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 1rem;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item{
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link > .link__image {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link {
+        text-decoration: none;
+        color: beige;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link:hover {
+        text-decoration: underline;
+    }
+    
+    .section > .content > .studies {
+        margin-right: 2rem;
+    }
+    
+    .section > .content > .studies > .studies__list > .list__item{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .section > .content > .languages > .languages__table {
+        width: 90%;
+        border-spacing: 0 15px;
+    }
+    
+    .section > .content > .languages > .languages__table th, td{
+        padding-bottom: 1rem;
+        border-bottom: 2px solid;
+    }
+    
+    .section > .content > .languages > .languages__table > * {
+        border: solid 1px black;
+        text-align: center;
+    }   
 }
 
-.section > .content > .about > .about__text {
-    text-align: justify;
-    max-width: 125vh;
-    margin-right: 2rem;
+@media screen and (max-width: 1400px) {
+    .section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    
+    .section > .content > .about > .about__text {
+        text-align: justify;
+        max-width: 125vh;
+        margin-right: 2rem;
+    }
+    
+    .section > .content > .about > .about__text > .underlined--text {
+        text-decoration: underline;
+    }
+    
+    .section > .section__separator {
+        height: 2px;
+        width: 90%;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    .section > .card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section > .card > .card__photo {
+        width: 200px;
+        margin-left: 2.5rem;
+        box-shadow: 7px 7px;
+        margin-bottom: 2rem;
+    }
+    
+    .section > .card > .card__info > .info__list > .list__item {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 1rem;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item{
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link > .link__image {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link {
+        text-decoration: none;
+        color: beige;
+    }
+    
+    .section > .card > .contact > .contact__list > .list__item > .item__link:hover {
+        text-decoration: underline;
+    }
+    
+    .section > .content > .studies {
+        margin-right: 2rem;
+    }
+    
+    .section > .content > .studies > .studies__list > .list__item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .section > .content > .languages > .languages__table {
+        width: 90%;
+        border-spacing: 0 15px;
+    }
+    
+    .section > .content > .languages > .languages__table th, td{
+        padding-bottom: 1rem;
+        border-bottom: 2px solid;
+    }
+    
+    .section > .content > .languages > .languages__table > * {
+        border: solid 1px black;
+        text-align: center;
+    }   
 }
 
-.section > .content > .about > .about__text > .underlined--text {
-    text-decoration: underline;
-}
+@media screen and (max-width: 650px) {
+    .section > .content > .studies > .studies__list > .list__item {
+        margin-left: -2.5rem;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        margin-block: 1rem;
+        padding: 1rem;
+        border-radius: 4px;
+        text-align: center;
+    }
 
-.section > .section__separator {
-    width: 2px;
-    height: 85vh;
-    background-color: white;
-}
-
-.section > .card > .card__photo {
-    width: 200px;
-    margin-left: 2.5rem;
-    box-shadow: 7px 7px;
-}
-
-.section > .card > .card__info > .info__list > .list__item {
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 1rem;
-}
-
-.section > .card > .contact > .contact__list > .list__item{
-    display: flex;
-    list-style-type: none;
-}
-
-.section > .card > .contact > .contact__list > .list__item > .item__link {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.section > .card > .contact > .contact__list > .list__item > .item__link > .link__image {
-    width: 20px;
-    height: 20px;
-}
-
-.section > .card > .contact > .contact__list > .list__item > .item__link {
-    text-decoration: none;
-    color: beige;
-}
-
-.section > .card > .contact > .contact__list > .list__item > .item__link:hover {
-    text-decoration: underline;
-}
-
-.section > .content > .studies {
-    margin-right: 2rem;
-}
-
-.section > .content > .studies > .studies__list > .list__item{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 1rem;
-}
-
-.section > .content > .languages > .languages__table {
-    width: 90%;
-    border-spacing: 0 15px;
-}
-
-.section > .content > .languages > .languages__table th, td{
-    padding-bottom: 1rem;
-    border-bottom: 2px solid;
-}
-
-.section > .content > .languages > .languages__table > * {
-    border: solid 1px black;
-    text-align: center;
+    .section > .content > .studies > .studies__list > .list__item:last-child {
+        margin-bottom: 2rem;
+    }
 }

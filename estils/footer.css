@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding-inline: 2rem;
     background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 1rem;
 }
 
 .footer > .footer__list {
@@ -18,4 +19,24 @@
 
 .footer > .footer__list > .list__item > .item__link:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-inline: 2rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .footer > .footer__list {
+        display: flex;
+        justify-content: center;
+        margin-left: -2.5rem;
+        gap: 1rem;
+        list-style-type: none;
+    }
 }
