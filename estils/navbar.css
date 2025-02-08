@@ -1,7 +1,16 @@
+:root {
+    --dark-blue-color: #003049;
+    --red-color: #D62828;
+    --orange-color: #F77F00;
+    --light-orange-color: #FCBF49;
+    --beige-color: #EAE2B7;
+}
+
 .header {
     position: sticky;
     top: 0;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgb(255, 255, 255, 0.4);
+    border-bottom: 1px solid white;
 }
 
 .header > .header__nav {
@@ -11,6 +20,7 @@
 
 .header > .header__nav > .nav__icon {
     margin-left: 1rem;
+    color: var(--dark-blue-color);
 }
 
 .header > .header__nav > .nav__list {
@@ -46,4 +56,15 @@
 
 .header > .header__nav > .nav__list > .list__item:hover > .item__link {
     color: var(--beige-color);
+}
+
+@media screen and (max-width: 500px) {
+    .header > .header__nav > .nav__icon {
+        display: none;
+    }
+
+    .header > .header__nav > .nav__list {
+        height: 20px;
+    }
+
 }
