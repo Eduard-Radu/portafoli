@@ -20,7 +20,7 @@ body {
     font-family: 'ArchivoBlack';
 }
 
-@media screen and (min-width: 1800px) and (min-height: 600px) {
+@media screen and (min-width: 1400px) and (min-height: 400px) {
     .header {
         margin: 0;
     }
@@ -94,7 +94,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1800px), screen and (max-height: 600px) {
+@media screen and (max-width: 1400px), screen and (max-height: 600px) {
     .header {
         margin: 0;
     }
